@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Employee</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between">
+                <div>
+                    <h2>Employee List</h2>
+                </div>
+                <div>
+                    <button class="btn btn-primary" id="getEmployee">Get Employees</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div>
+                            <label>Title</label>
+                            <input type="text" class="form-control" id="employeetitle" />
+                        </div>
+                        <div>
+                            <label>FirstName</label>
+                            <input type="text" class="form-control" id="employeefirstname" />
+                        </div>
+                        <div>
+                            <label>LastName</label>
+                            <input type="text" class="form-control" id="employeelastname" />
+                        </div>
+                        <div class="text-center ">
+                            <button class="btn btn-success mt-2" id="btnAddEmployee" type="submit">Add Employee</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>FirstName</th>
+                                    <th>Lastname</th>
+                                </tr>
+                            </thead>
+                            <tbody id="employeeTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="employee.js"></script>
+</body>
+</html>
+
+
+
+
+
